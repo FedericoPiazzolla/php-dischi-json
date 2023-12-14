@@ -33,19 +33,18 @@
 
     <div id="app">
       <header>
-        <div class="container">
-          cciao
-          <!-- <img class="logo" src="img/logo.webp" alt="logo.spotify"> -->
+        <div class="container h-100 d-flex align-items-center">
+          <img class="logo" src="img/logo.webp" alt="logo.spotify">
         </div>
       </header>
 
       <main>
-        <div class="container py-5">
-          <div class="row row-cols-3">
-            <div class="col" v-for="(disc, index) in discArray" :key="index">
+        <div class="container px-5">
+          <div class="row pb-5">
+            <div class="col-4 gy-5" v-for="(disc, index) in discArray" :key="index">
 
               <!-- Card -->
-              <div class="card h-100">
+              <div class="card h-100 color_card">
                 <img :src="disc.poster" class="card-img-top" :alt="disc.title">
                 <div class="card-body text-center">
                   <h2>{{ disc.title }}</h2>

@@ -15,5 +15,22 @@ header {
   background-color: #06141f;
 }
 .logo {
-  width: 50px;
+  width: 70px;
+}
+
+/* MAIN */
+
+main {
+  background-color: #1D2D3C;
+}
+
+.color_card {
+  background-color: #112030;
+  padding: 2rem 2rem 0;
+  color: white;
+}
+
+.color_card h2 {
+  font-size: 1.3rem;
+  font-weight: bolder;
 }
