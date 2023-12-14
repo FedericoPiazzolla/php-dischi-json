@@ -1,0 +1,19 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+}
+
+/* HEADER */
+
+header {
+  height: 100px;
+  background-color: #06141f;
+}
+.logo {
+  width: 50px;
+}
