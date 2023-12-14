@@ -9,8 +9,10 @@ createApp({
     }
   },
   created() {
-    axios.get(this.apiUrl).then((resp) => {
-      console.log(resp);
+    axios
+    .get(this.apiUrl)
+    .then((resp) => {
+      this.discArray = resp.data;
     })
   }
 

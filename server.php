@@ -8,4 +8,8 @@
   // trasformo array in lista
   $json = json_encode($list);
 
+  // invio i dati al client
+  header("Content-Type: application/json");
+  echo($json)
+
 ?>
