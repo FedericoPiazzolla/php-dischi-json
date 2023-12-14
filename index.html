@@ -30,13 +30,32 @@
   <body>
 
     <div id="app">
-      <div class="container">
-        <div class="row">
-          <div class="col-4">
-            
+      <header>
+        
+      </header>
+
+      <main>
+        <div class="container">
+          <div class="row row-cols-3">
+            <div class="col" v-for="(disc, index) in discArray" :key="index">
+
+              <!-- Card -->
+              <div class="card">
+                <img :src="disc.poster" class="card-img-top" :alt="disc.title">
+                <div class="card-body text-center">
+                  <h2>{{ disc.title }}</h2>
+                  <p>{{ disc.author }}</p>
+                  <h4>{{ disc.year }}</h4>
+                </div>
+              </div>
+              <!-- /Card -->
+
+            </div>
           </div>
         </div>
-      </div>
+      </main>
+
+
     </div>
 
     <!-- JS -->
