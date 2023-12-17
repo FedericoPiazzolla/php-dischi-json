@@ -7,7 +7,7 @@
 
   // la gestione di SHOW
   if (isset($_GET['id'])) {
-    $selected_disk = $data[$_GEt['id']];
+    $selected_disk = $data[$_GET['id']];
     $result = json_encode($selected_disk);
   } else {
     // caso INDEX - mostra lista
