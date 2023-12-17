@@ -28,7 +28,7 @@
 
   <body>
     <div id="app">
-      <div class="wrapper">
+      <div class="wrapper position-relative">
         <header>
           <div class="container h-100 d-flex align-items-center">
             <img class="logo" src="img/logo.webp" alt="logo.spotify" />
@@ -60,11 +60,19 @@
             </div>
 
             <!-- Dialog -->
-            <div class="dialog" v-if="showDisk">
-              Questo è il dialog
-              <button @click="closeDialog()">X</button>
+            <div class="my_dialog" v-if="showDisk">
+              <button class=" btn btn-outline-secondary my_close position-absolute" @click="closeDialog()">X</button>
+            <div class="card border-0 text-center">
               <img :src="selectedDisk.poster" alt="" />
-              <h3>{{ selectedDisk.title }}</h3>
+
+              <div class="content">
+                <h3>{{ selectedDisk.title }}</h3>
+                <p>{{ selectedDisk.author }}</p>
+                <h4>{{ selectedDisk.year }}</h4>
+              </div>
+              
+            </div>
+              
             </div>
             <!-- /Dialog -->
           </div>
